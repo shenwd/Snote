@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shen.snote.view.SRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_margin="5dp"
+    android:background="@drawable/shape_item_record_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="60"
+        android:textColor="@color/recordTimeColor"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_play_time"
+        android:layout_marginLeft="20dp"
+        android:text=""
+        android:layout_marginBottom="5dp"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/tv_count_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_play_time"
+        android:layout_toRightOf="@id/tv_play_time"
+        android:layout_marginLeft="5dp"
+        android:text="s"
+        android:textColor="@color/recordTimeColor"
+        android:textSize="16sp" />
+
+
+   <TextView
+       android:id="@+id/tv_play"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:textSize="20sp"
+       android:layout_centerVertical="true"
+       android:padding="10dp"
+       android:layout_marginRight="10dp"
+       android:textColor="@color/recordTimeColor"
+       android:text="播放"/>
+
+</com.shen.snote.view.SRelativeLayout>

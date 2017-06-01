@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/toolba"
+        android:title="添加"
+        android:icon="@mipmap/y4_menu_icon_textsize_add_day_p_lambskin"
+        app:showAsAction="ifRoom"
+        />
+</menu>

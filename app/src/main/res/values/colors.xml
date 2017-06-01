@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--透明-->
+    <color name="transparent">#00000000</color>
+
+    <color name="main_view_color">#fcefec</color>
+    <color name="colorToolBar">#f2f292</color>
+
+    <color name="colorNoteText">#a5b4de</color>
+
+    <color name="colorDivider">#808594</color>
+    
+    <!--字体设置颜色-->
+    <color name="colorCircle1" >#66757c</color>
+    <color name="colorCircle2" >#FF2A9FDA</color>
+    <color name="colorCircle3" >#78e759</color>
+    <color name="colorCircle4" >#56532c</color>
+    <color name="colorCircle5" >#87227d</color>
+    <color name="colorCircle6" >#540319</color>
+
+    <!--自定义录音控件用的颜色-->
+    <color name="RoundColor">#bfeae9</color>
+    <color name="RoundHintTextColor">#1e1e20</color>
+    <color name="TimeTextColor">#04eaf2</color>
+    <color name="RoundProgressColor">#0fe6ed</color>
+
+    <color name="RoundProgressColor_2">#3608f3fa</color>
+    <color name="RoundProgressColor_3">#5e07eff7</color>
+    <color name="RoundProgressColor_4">#d104eef5</color>
+    <color name="RoundProgressColor_5">#03fad9</color>
+
+    <color name="PopupTextColor">#f40edd</color>
+    <color name="PopupLineColor">#f40edd</color>
+
+    <!--录音布局中使用的颜色-->
+    <color name="recordTimeColor">#f555c0</color>
+    <color name="recordBgColor">#583fdaae</color>
+</resources>

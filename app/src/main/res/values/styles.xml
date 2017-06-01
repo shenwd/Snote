@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActivityTheme" parent="AppTheme">
+        <item name="android:background">@color/main_view_color</item>
+    </style>
+
+    <!--ToolBard的样式-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--ToolBar的背景色-->
+        <item name="colorPrimary">#00BFFF</item>
+        <!--toolbar标题文字颜色-->
+        <item name="android:textColorPrimary">@android:color/black</item>
+    </style>
+
+    <!--ToolBar的弹出菜单主题样式-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="loadingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+    </style>
+
+    <!--加载框弹出消失动画-->
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+
+    <!--录音Popup弹出动画-->
+    <style name="popup_window_anim_record_bottom" >
+        <item name="android:windowEnterAnimation">@anim/popup_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_top_exit</item>
+    </style>
+
+    <!-- pupupwindow的弹出和消失动画 -->
+    <style name="popup_window_anim_bottom">
+        <item name="android:windowEnterAnimation">@anim/popup_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_bottom_exit</item>
+    </style>
+
+    <!-- pupupwindow的弹出和消失动画 -->
+    <style name="popup_window_anim_left">
+        <item name="android:windowEnterAnimation">@anim/popup_left_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_left_exit</item>
+    </style>
+
+</resources>

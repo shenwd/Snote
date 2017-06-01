@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/toolbar_add_main"
+        android:title="添加"
+        android:icon="@mipmap/y4_menu_icon_textsize_add_day_p_lambskin"
+        app:showAsAction="ifRoom"
+        />
+
+    <item android:id="@+id/toolbar_r_img"
+        android:title="分享"
+        android:icon="@mipmap/y4_menu_more_day_n_lambskin"
+        app:showAsAction="ifRoom"
+        >
+
+        <!-- item包含menu表示该menu是item下的子菜单 -->
+        <menu>
+            <!-- 将group中的菜单项放于一个组里面 -->
+            <group>
+                <item android:id="@+id/toolbar_r_1"
+                    android:title="登录"
+                    android:icon="@drawable/ic_launcher"
+                    app:showAsAction="ifRoom"
+                    />
+                <item android:id="@+id/toolbar_r_2"
+                    android:title="注册"
+                    android:icon="@drawable/ic_launcher"
+                    app:showAsAction="ifRoom"
+                    />
+                <item android:id="@+id/toolbar_r_3"
+                    android:title="设置"
+                    android:icon="@drawable/ic_launcher"
+                    app:showAsAction="ifRoom"
+                    />
+            </group>
+        </menu>
+    </item>
+
+</menu>
