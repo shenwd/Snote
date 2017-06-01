@@ -6,6 +6,10 @@ package com.shen.snote;
 
 public class Const {
 
+    public static final int NOTE_TYPE_NORMAL = 1;
+    public static final int NOTE_TYPE_SORT = 2;
+    public static final int NOTE_TYPE_POINT = 3;
+
     public static int noteEditTextSize = 14;
     public static String txtModeSpaceOne = "\t";
     public static String txtModeSpaceTwo = "\t\t";

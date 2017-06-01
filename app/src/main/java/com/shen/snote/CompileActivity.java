@@ -8,10 +8,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
-import android.media.MediaPlayer;
-import android.media.TimedMetaData;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.MediaStore;
@@ -44,12 +41,9 @@ import com.shen.snote.utils.DensityUtils;
 import com.shen.snote.utils.FileUtils;
 import com.shen.snote.utils.LogUtils;
 import com.shen.snote.utils.MediaPlayUtils;
-import com.shen.snote.utils.RecorderUtils;
 import com.shen.snote.utils.SPUtils;
 import com.shen.snote.utils.SdCardUtils;
-import com.shen.snote.utils.TimeUtils;
 import com.shen.snote.utils.ToastUtils;
-import com.shen.snote.view.DialogRecorder;
 import com.shen.snote.view.PopupRecorder;
 import com.shen.snote.view.PopupWindowTxtSize;
 import com.shen.snote.view.PopupWindowTxtSort;
@@ -57,7 +51,6 @@ import com.shen.snote.view.SEditText;
 import com.shen.snote.view.SRelativeLayout;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
@@ -67,8 +60,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Timer;
-import java.util.TimerTask;
 
 /**
  * 笔记编辑页面逻辑类
