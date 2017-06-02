@@ -9,11 +9,18 @@ public class Const {
     public static final int NOTE_TYPE_NORMAL = 1;
     public static final int NOTE_TYPE_SORT = 2;
     public static final int NOTE_TYPE_POINT = 3;
+    public static final int NOTE_TYPE_img = 4;
+    public static final int NOTE_TYPE_record = 5;
 
-    public static int noteEditTextSize = 14;
+    //正文笔记字体默认大小
+    public static int noteEditTextSize = 18;
+
+    //空格
     public static String txtModeSpaceOne = "\t";
     public static String txtModeSpaceTwo = "\t\t";
 
+    //
+    public static final String TXT_SOLID_CIRCLE = Const.txtModeSpaceOne + "●" + Const.txtModeSpaceOne;
 
     /**
      * 用于正则表达式时

@@ -195,7 +195,7 @@ public class MainActivity extends BaseMainActivity implements Toolbar.OnMenuItem
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.toolbar_add_main:
-                Intent intent = new Intent(MainActivity.this, CompileActivity.class);
+                Intent intent = new Intent(MainActivity.this, EditNoteACtivity.class);
                 MainActivity.this.startActivityForResult(intent, 0);
                 break;
 

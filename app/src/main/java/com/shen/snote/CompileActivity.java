@@ -597,8 +597,8 @@ public class CompileActivity extends BaseMainActivity implements View.OnClickLis
         //保存到list
         allViewMaps.put(tmpTxt + tmpViewIndex, editText);
         putSortList(tmpTxt + tmpViewIndex);
-        EditTextBean editTextBean = new EditTextBean(IEditNote.IEDITNOTE_EDITTEXT, EditTextBean.EDIT_NORMAL, "");
-        allDataMaps.put(tmpTxt + tmpViewIndex, editTextBean);
+//        EditTextBean editTextBean = new EditTextBean(IEditNote.IEDITNOTE_EDITTEXT, EditTextBean.EDIT_NORMAL, "");
+//        allDataMaps.put(tmpTxt + tmpViewIndex, editTextBean);
     }
 
     private void saveImg(ImageView iv, Bitmap bitmap) {
@@ -794,7 +794,7 @@ public class CompileActivity extends BaseMainActivity implements View.OnClickLis
                 int indexOfChild = llContent.indexOfChild(currentSEditText);
                 String name = allViewsName.get(indexOfChild);
                 EditTextBean editTextBean = (EditTextBean) allDataMaps.get(name);
-                editTextBean.setTxt(String.valueOf(s));
+//                editTextBean.setTxt(String.valueOf(s));
 
                 SPUtils.put(CompileActivity.this, tmpDataSP, tmpTxt + tmpViewIndex, String.valueOf(s));
             }

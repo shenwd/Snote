@@ -27,7 +27,7 @@ public class SEditText extends EditText implements TextView.OnEditorActionListen
     public static final int MODE_HOLLOW_CIRCLE = 2;
     public static final int MODE_SORT = 3;
 
-    private static final String TXT_SOLID_CIRCLE = Const.txtModeSpaceTwo + "●" + Const.txtModeSpaceOne;
+
     private static final String TXT_HOLLOW_CIRCLE = Const.txtModeSpaceTwo + "○" + Const.txtModeSpaceOne;
 
     private int sortIndex = 0;//排序角标
@@ -83,7 +83,7 @@ public class SEditText extends EditText implements TextView.OnEditorActionListen
      * 根据mode实际添加效果
      */
     public void addEffect() {
-        String proStr = getText().toString();
+        /*String proStr = getText().toString();
         int selectionStart = getSelectionStart();
         if (txtMode == MODE_SOLID_CIRCLE) {
             setText(TXT_SOLID_CIRCLE + proStr);
@@ -97,14 +97,14 @@ public class SEditText extends EditText implements TextView.OnEditorActionListen
             int length = String.valueOf(sortIndex).length();
             setSelection(selectionStart + 4+length);
 
-        }
+        }*/
     }
 
     /**
      * 根据mode实际删除效果
      */
     public void deleteEffect() {
-        String proStr = getText().toString().substring(4);
+        /*String proStr = getText().toString().substring(4);
         int selectionStart = getSelectionStart();
         if (txtMode == MODE_SOLID_CIRCLE) {
             setText(proStr);
@@ -116,7 +116,7 @@ public class SEditText extends EditText implements TextView.OnEditorActionListen
             int length = String.valueOf(sortIndex).length();
             setText(getText().toString().substring(length+4));
             setSelection(selectionStart - 4 - length);
-        }
+        }*/
     }
 
     public interface OnEnterClickListener{
@@ -138,7 +138,7 @@ public class SEditText extends EditText implements TextView.OnEditorActionListen
     @Override
     protected void onTextChanged(CharSequence text, int start, int lengthBefore, int lengthAfter) {
         super.onTextChanged(text, start, lengthBefore, lengthAfter);
-        String s = text.toString();
+        /*String s = text.toString();
         s.startsWith("");
         if(text != null){
             boolean startsHollow = text.toString().startsWith(TXT_HOLLOW_CIRCLE);
@@ -147,14 +147,11 @@ public class SEditText extends EditText implements TextView.OnEditorActionListen
             if(!startsHollow && !startsSolid && !startsWith){
                 setTxtMode(MODE_NULL);
             }
-        }
+        }*/
     }
 
     @Override
     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-        if(txtMode == MODE_NULL){
-            return false;
-        }
         if (actionId == EditorInfo.IME_ACTION_SEND
                 || actionId == EditorInfo.IME_ACTION_DONE
                 || (event != null && KeyEvent.KEYCODE_ENTER == event.getKeyCode() && KeyEvent.ACTION_DOWN == event.getAction())) {
